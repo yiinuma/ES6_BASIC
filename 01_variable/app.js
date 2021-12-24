@@ -5,7 +5,7 @@ var a = 'varで宣言';
 let b = 'letで宣言';
 
 // const
-const c = 'constで宣言';
+const c = 'constで宣言!';
 console.log(a);
 console.log(b);
 console.log(c);
