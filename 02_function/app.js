@@ -24,8 +24,6 @@ console.log(result2); //250
 const sayHello = () => 'Hello';
 console.log(sayHello());
 
-// アロー関数・引数が１つの場合 vscodeの機能で()が付与されるが()なしでもOK
-const sayName = (name) => {
-  console.log('Hello ' + name);
-};
+// アロー関数・引数が１つの場合()なしでもOK
+const sayName = (name) => console.log('Hello ' + name);
 sayName('Yoshi');
