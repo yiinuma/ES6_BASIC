@@ -25,5 +25,5 @@ const sayHello = () => 'Hello';
 console.log(sayHello());
 
 // アロー関数・引数が１つの場合()なしでもOK
-const sayName = (name) => console.log('Hello ' + name);
+const sayName = name => console.log('Hello ' + name);
 sayName('Yoshi');
