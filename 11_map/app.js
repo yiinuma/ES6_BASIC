@@ -40,7 +40,7 @@ const list = document.querySelector('.js-positionList');
 btn.addEventListener('click', () => {
   let output = '';
   playerList.forEach((val, key) => {
-    output += `<li>${key + 1}番は${val.position}${val.name}</li>`;
+    output += `<li>${key + 1}番${val.position}${val.name} 背番号${val.number}</li>`;
   });
   list.innerHTML = output;
 });
