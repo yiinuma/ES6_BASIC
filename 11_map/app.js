@@ -33,6 +33,18 @@ playerList.forEach((val, key) => {
 // 2番は青木選手です
 // 3番は山田選手です
 
+// DOMの生成
+const btn = document.querySelector('.js-btn');
+const list = document.querySelector('.js-positionList');
+
+btn.addEventListener('click', () => {
+  let output = '';
+  playerList.forEach((val, key) => {
+    output += `<li>${key + 1}番は${val.position}${val.name}</li>`;
+  });
+  list.innerHTML = output;
+});
+
 // ------------------------------------------------------------------------------
 // filter 配列から条件に一致する配列を作る
 // 配列から条件に一致する要素に処理を適用し、別の配列を作成できる
