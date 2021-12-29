@@ -45,3 +45,15 @@ smallNumber.forEach((val) => {
   // {name: '塩見', number: 9, position: 'センター'}
   // {name: '山田', number: 1, position: 'セカンド'}
 });
+
+// ------------------------------------------------------------------------------
+// reduce 配列から単一の値を取り出す
+// 配列全体から単一の値を生成するメソッド
+// 直前の要素における計算結果の返値を渡す
+// 配列のすべての要素に対して縮小関数を実行した結果が単一の値が最終結果になる
+// 配列名.reduce(コールバック関数,初期値)
+
+const totalNumber = playerList.reduce((prev, current) => {
+  return prev + current.number;
+}, 0); //prevの初期値=0
+console.log(`選手の背番号合計は${totalNumber}です`); //22
