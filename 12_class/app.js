@@ -54,9 +54,12 @@ class Women extends CPlayer {
   }
   // オーバーライト
   CSayHello() {
-    console.log(`うちは、${this.position}の${this.name}で、背番号は${this.number}よ`);
+    super.CSayHello();
+    console.log(`背番号は${this.number}よ！`);
   }
 }
 
 const womenPlayer = new Women('レイナ', 'ファースト', 2);
-womenPlayer.CSayHello(); //うちは、ファーストのレイナで、背番号は2よ
+womenPlayer.CSayHello();
+//私は、ファーストのレイナだ
+//背番号は2よ！
