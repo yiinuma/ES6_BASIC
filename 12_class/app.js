@@ -28,13 +28,13 @@ class CPlayer {
     this.name = name;
     this.position = position;
   }
-  CSayHello() {
+  cSayHello() {
     console.log(`私は、${this.position}の${this.name}だ`);
   }
 }
 
-const CStartPlayer = new CPlayer('山田', 'セカンド');
-CStartPlayer.CSayHello();
+const cStartPlayer = new CPlayer('山田', 'セカンド');
+cStartPlayer.cSayHello();
 
 // 継承 親クラスのメソッドを呼び出す
 // 親のクラスに定義されているメソッドを呼び出すことができる
@@ -53,13 +53,13 @@ class Women extends CPlayer {
     this.number = number;
   }
   // オーバーライト
-  CSayHello() {
-    super.CSayHello();
+  cSayHello() {
+    super.cSayHello();
     console.log(`背番号は${this.number}よ！`);
   }
 }
 
 const womenPlayer = new Women('レイナ', 'ファースト', 2);
-womenPlayer.CSayHello();
+womenPlayer.cSayHello();
 //私は、ファーストのレイナだ
 //背番号は2よ！
